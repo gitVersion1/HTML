@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Ndertimi i nje form regjistrimi</h1>
+    <form>
+      <!-- Form jane nje dokument, me hapesira boshe ku ti mund te plotesosh te dhena.
+    Perdoren per te mbledhur te dhena. Shembuj jane: Register, Log in, Sign in, komentet, search.
+    Search i motorrit te kerkimit te google, register apo log in ne Gmail, microsoft account etj.
+    Forma eshte e perbere nga dy elemente:  tag-u "input"-fushat ku vendosen informacionet 
+    dhe tag-u "label"-nje informacion se per cfare sherben nje input i caktuar -->
+      <label for="name"> Emri: </label>
+      <br /><!-- "Etiketa" e inputi-t per te marre emrin, atributi "for" percakton 
+    lidhjen ndermjet input dhe label vlera e atribuiti "for" eshte e njete me vleren e atributit "id" -->
+      <!-- Tag-u input ka atributin "type" per te percaktuar tipin e informacionit qe do te vendosen -->
+      <!-- Tipet jane: text-emri, mbiemri etj; number-mosha, cmimi, etj; email-adresa e email;
+    password-per vendosjen e paswordit; date-per datat kalendarike; checkbox-nese duam te perzgjedhim
+    me shume se nje element;radio-kur duhet te perzgjidhet vetem nje element  -->
+      <!-- atributi "required" nevojitet per te udhuzuar se cilat fusha duhet te plotesohen -->
+      <input type="text" id="name" required /> <br />
+      <br />
+      <label for="surname">Mbiemri</label> <br />
+      <input type="text" id="surname" required /> <br />
+      <br />
+      <label for="age">Mosha</label> <br />
+      <input type="number" id="age" required /> <br />
+      <br />
+      <label>Gjinia </label><br />
+      <label for="femer">Femer:</label
+      ><input type="radio" value="femer" required /><br />
+      <labe for="mashkull">Mashkull</labe
+      ><input type="radio" value="mashkul" required /><br /><br />
+      <label for="email">Email</label><br />
+      <input type="email" id="email" required /><br />
+      <br />
+      <label for="password">Password</label><br />
+      <input type="password" id="password" required /><br />
+      <br />
+      <label for="re_password">Repeat_Password</label><br />
+      <input type="password" id="re_password" required /><br />
+      <br />
+      <input type="submit" value="Register" required />
+    </form>
+  </body>
+</html>

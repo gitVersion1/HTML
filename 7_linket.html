@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link</title>
+  </head>
+  <body>
+    <!-- Linket na lejojne te lundrojme ne website te ndryshme, ne faqe web brenda te njejtit
+        website dhe brenda te se njejtes faqe.
+        Linket krijohen nga tag <a>. User duke klikuar mbi linkun dergohen ne fagen apo websiten qe eshte 
+            vendosur ne atributin "href", teksti i vendosur ndermjet <a></a> njihet si tekst link dhe per ta 
+        hapur linkun ne nje tab te ri vendoset atributi "target" me vleren "_blank"-->
+    <h3 id="top">Shembuj të link-eve qe te dergon ne nje website tjeter</h3>
+    <p>
+      Kur kalohet nga njeri website ne tjetrin duhet te perdoret URL(Uniform
+      Resource Locator) absolute (adresa e plote e website, duke u nisur nga
+      domain)
+    </p>
+    <a href="https://www.google.com/">Google</a> <br />
+    <a href="https://www.wikipedia.org/">Wikipedia</a>
+    <hr />
+    <!-- Vije horizontale per te bere ndarjen, merr dhe atributin "width"-->
+    <h3>Shembuj të link-eve qe mundesojne lundrimin brenda websitet</h3>
+    <p>
+      Kur duam te lundrojme brenda website nuk eshte e nevojshme te specifikohet
+      URL qe nga domain(C:\Users\Pc\Desktop\akademia.al\tituj.html) por perdoren
+      linket relative, pra nje pjese e linkut absolut. Nese filet e html, jane
+      ne te njejtin folder mjafton vetem emri i file
+    </p>
+    <a href="2_tekst.html">Tekst</a> <br />
+    <a href="3_imazhe.html">Imazhe</a> <br />
+    <a href="Kopertina e nje libri/kopertin_libri.html">Kover i nje libri</a>
+    <hr />
+    <h3>Lundrimi ne nje pjese specifike ne nje faqe web-i</h3>
+    <p>
+      Me pare duhet te njiheni me atributin "id". Id perdoret per te bere nje
+      element unik ne krahasim me pjesen tjeter, vlera e qe merr id nuk mund te
+      perseritet. <br />
+      Nje elementi tek file "kover_libri.html" i vendosim nje "id". <br />Per ta
+      therritur perdoret shenja "#"
+    </p>
+    <a href="kover_libri.html#paragraf_fund" target="_blank"
+      >Paragrafi i fundit pershkrues tek kover_libri</a
+    >
+    <hr />
+    <br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <h3>Lundrimi brenda te se njejtes html</h3>
+    <p>
+      Vendoset atributi "id" ne nje element specifik dhe me pas therritet direkt
+      me ane te shenjes #
+    </p>
+    <a href="#top">Fillimi i faqes</a>
+  </body>
+</html>
